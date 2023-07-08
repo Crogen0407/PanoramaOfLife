@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Platform
+  - Laser
+  - Boss
+  - PlayerBullet
+  - EnemyBullet
+  - TrapLaser
+  - PlayerPowerBullet
+  - DisturbBullet
+  - Explosion
+  - HighExplosion
+  - EnemyExplosion
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - PostProcess
+  - Water
+  - UI
+  - Enemy
+  - Player
+  - GlobalLight
+  - BossPowerUpLight
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: CameraEffect
+    uniqueID: 1369107415
+    locked: 0
+  - name: UI
+    uniqueID: 1639511871
+    locked: 0
