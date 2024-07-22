@@ -51,7 +51,6 @@ public class EnemyBullet : MonoBehaviour
                 GameManager.Instance.FlipScreen();
                 LifeTime();
             }
-            PoolManager.Instance._objectManager.Push("EnemyBullet", gameObject);
         }
     }
 

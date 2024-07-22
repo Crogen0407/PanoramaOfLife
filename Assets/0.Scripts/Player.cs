@@ -113,6 +113,7 @@ public class Player : MonoBehaviour
                     OnHit(40, 10);
                     Debug.Log("ddf");
                 }
+                PoolManager.Instance._objectManager.Push("EnemyBullet", collision.gameObject);
                 break;
             case "Enemy":
             case "Laser":
