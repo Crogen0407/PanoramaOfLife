@@ -104,12 +104,14 @@ public class Player : MonoBehaviour
 
 	private void OnTriggerStay2D(Collider2D collision)
 	{
+        Debug.Log(collision.transform.tag);
         switch (collision.transform.tag)
         {
             case "EnemyBullet":
                 if (_gameManager.islessdamagedMode == false)
                 {
                     OnHit(40, 10);
+                    Debug.Log("ddf");
                 }
                 break;
             case "Enemy":

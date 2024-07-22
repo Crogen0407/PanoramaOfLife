@@ -37,6 +37,12 @@ public class StoryManager : MonoBehaviour
         audioSource_Backgroundmusic.volume = 1 * PlayerPrefs.GetFloat("Sound");
     }
 
+    public void StorySkip()
+	{
+        StopAllCoroutines();
+        StartCoroutine(PanelfadeIn(1));
+    }
+
     IEnumerator TextRendering()
 	{
         yield return new WaitForSeconds(1f);
@@ -105,7 +111,7 @@ public class StoryManager : MonoBehaviour
             }
             else if (GameManager.Instance.isLastStage && isBossStage == false)
             {
-                lastStory = "모르겠다. |||내가 무슨 생각을 하고 싶었는지 기억이 안난다.";
+                lastStory = "모르겠다. |||내가 무슨 생각을 했었는지 기억이 안난다.";
 
                 yield return new WaitForSeconds(1f);
                 isBossStage = true;
@@ -150,12 +156,11 @@ public class StoryManager : MonoBehaviour
         yield return null;
     }
 
-    public IEnumerator PanelfadeIn()
+    public IEnumerator PanelfadeIn(float timePercent = 5)
     {
         darkPanel.gameObject.SetActive(true);
         float currentVulume = audioSource_Backgroundmusic.volume;
         float time = 0;
-        float timePercent = 5;
         Color currentColor = darkPanel.color;
         while (time / timePercent < 1)
         {
