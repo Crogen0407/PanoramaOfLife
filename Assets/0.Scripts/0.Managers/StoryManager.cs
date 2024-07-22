@@ -11,7 +11,7 @@ public class StoryManager : MonoBehaviour
     public TextMeshProUGUI storyText;
     public TextAsset storyTextFile;
     public static string[] text;
-    public static int _storyIndex = 6;
+    public static int _storyIndex = 0;
     public string lastStory = "";
     [SerializeField] private Image darkPanel;
     private static bool isBossStage;
