@@ -54,47 +54,47 @@ public class StoryManager : MonoBehaviour
 				switch (bossStoryCount)
 				{
 					case 0:
-                        lastStory = "ÆÈÀÇ °¨°¢ÀÌ »ç¶óÁ®°£´Ù.";
+                        lastStory = "íŒ”ì˜ ê°ê°ì´ ì‚¬ë¼ì ¸ê°„ë‹¤.";
                         break;
                     case 1:
-                        lastStory = "¼Ò¸®°¡ µé¸®Áö ¾Ê´Â´Ù.";
+                        lastStory = "ì†Œë¦¬ê°€ ë“¤ë¦¬ì§€ ì•ŠëŠ”ë‹¤.";
                         break;
                     case 2:
-                        lastStory = "³¿»õ°¡ ´À²¸ÁöÁö ¾Ê´Â´Ù.";
+                        lastStory = "ëƒ„ìƒˆê°€ ëŠê»´ì§€ì§€ ì•ŠëŠ”ë‹¤.";
                         break;
                     case 3:
-                        lastStory = "Æø°ÝÀº ÇÑ¼ø°£ÀÌ´Ù.";
+                        lastStory = "í­ê²©ì€ í•œìˆœê°„ì´ë‹¤.";
                         break;
                     case 4:
-                        lastStory = "ÆíÇÏ°Ô »ì°í ½Í´Ù.";
+                        lastStory = "íŽ¸í•˜ê²Œ ì‚´ê³  ì‹¶ë‹¤.";
                         break;
                     case 5:
-                        lastStory = "¾Æ¸§´ä°Ô »ì°í ½Í´Ù.";
+                        lastStory = "ì•„ë¦„ë‹µê²Œ ì‚´ê³  ì‹¶ë‹¤.";
                         break;
                     case 6:
-                        lastStory = "»ç¶ûÇÏ¸ç »ì°í ½Í´Ù.";
+                        lastStory = "ì‚¬ëž‘í•˜ë©° ì‚´ê³  ì‹¶ë‹¤.";
                         break;
                     case 7:
-                        lastStory = "ÆíÇÏ°Ô Á×°í ½Í´Ù.";
+                        lastStory = "íŽ¸í•˜ê²Œ ì£½ê³  ì‹¶ë‹¤.";
                         break;
                     case 8:
-                        lastStory = "¾Æ¸§´ä°Ô Á×°í ½Í´Ù.";
+                        lastStory = "ì•„ë¦„ë‹µê²Œ ì£½ê³  ì‹¶ë‹¤.";
                         break;
                     case 9:
-                        lastStory = "ÆíÇÏ°Ô Á×°í ½Í´Ù.";
+                        lastStory = "íŽ¸í•˜ê²Œ ì£½ê³  ì‹¶ë‹¤.";
                         break;
                     case 10:
-                        lastStory = "³ªÀÇ ¼Ò¿øÀº ¿å½ÉÀÌ ³Ê¹« Áö³ªÃÆ±â¿¡ ½ÅÀº ÀÌ¸¦ ¹«½ÃÇß´Ù.|=|Æò¹üÇÏ°Ô »ì°í Á×´Â °ÍÀÌ Áö³µÃÆ´ø °ÍÀÏ±î...";
+                        lastStory = "ë‚˜ì˜ ì†Œì›ì€ ìš•ì‹¬ì´ ë„ˆë¬´ ì§€ë‚˜ì³¤ê¸°ì— ì‹ ì€ ì´ë¥¼ ë¬´ì‹œí–ˆë‹¤.|=|í‰ë²”í•˜ê²Œ ì‚´ê³  ì£½ëŠ” ê²ƒì´ ì§€ë‚˜ì³¤ë˜ ê²ƒì¼ê¹Œ...";
                         break;
                     default:
-                        lastStory = "\n\"ÀÌÂëµÇ¸é Æ÷±âÇÏÁö??\"\n";
+                        lastStory = "\n\"ì´ì¯¤ë˜ë©´ í¬ê¸°í•˜ì§€??\"\n";
                         break;
                 }
                 bossStoryCount++;
             }
 			else
 			{
-                lastStory = "ÁÁÀº ±â¾ïµµ,||| ¾È ÁÁÀº ±â¾ï¸¶Àú »ç¶óÁø´Ù.|||=|||¸¶Áö¸·Àº Æí¾ÈÇÏ´Ù.|||=|||¸¶Áö¸·Àº Æí¾ÈÇß´Ù.|||";
+                lastStory = "ì¢‹ì€ ê¸°ì–µë„,||| ì•ˆ ì¢‹ì€ ê¸°ì–µë§ˆì € ì‚¬ë¼ì§„ë‹¤.|||=|||ë§ˆì§€ë§‰ì€ íŽ¸ì•ˆí•˜ë‹¤.|||=|||ë§ˆì§€ë§‰ì€ íŽ¸ì•ˆí–ˆë‹¤.|||";
             }
 
         }
@@ -111,7 +111,7 @@ public class StoryManager : MonoBehaviour
             }
             else if (GameManager.Instance.isLastStage && isBossStage == false)
             {
-                lastStory = "¸ð¸£°Ú´Ù. |||³»°¡ ¹«½¼ »ý°¢À» Çß¾ú´ÂÁö ±â¾ïÀÌ ¾È³­´Ù.";
+                lastStory = "ëª¨ë¥´ê² ë‹¤. |||ë‚´ê°€ ë¬´ìŠ¨ ìƒê°ì„ í–ˆì—ˆëŠ”ì§€ ê¸°ì–µì´ ì•ˆë‚œë‹¤.";
 
                 yield return new WaitForSeconds(1f);
                 isBossStage = true;
