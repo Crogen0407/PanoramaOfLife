@@ -111,7 +111,7 @@ public class StoryManager : MonoBehaviour
             }
             else if (GameManager.Instance.isLastStage && isBossStage == false)
             {
-                lastStory = "모르겠다. |||내가 무슨 생각을 했었는지 기억이 안난다.";
+                lastStory = "기억이 안난다.";
 
                 yield return new WaitForSeconds(1f);
                 isBossStage = true;
